@@ -1,0 +1,135 @@
+body {
+    position: relative;
+  }
+  
+  .container-btn {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .btn-home:hover, .btn-about:hover, .btn-contact:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .btn-home, .btn-about, .btn-contact {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .footer {
+    background-color: #8e44ad;
+    color: #333333;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+  }
+  
+  .img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .hero {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 150px 0 80px 0;
+    color: #ffffff;
+  }
+  
+  .content-container {
+    text-align: center;
+    padding: 80px 40px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+  }
+  
+  .gato-logo {
+    width: 30px; /* Reduce el ancho del logo */
+    height: 30px; /* Reduce el alto del logo */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 20px; /* Agrega un margen a la izquierda */
+    margin-top: 20px; /* Agrega un margen superior */
+  }
+  
+  h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  h1 {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  
+  .btn-branding {
+    padding: 20px 40px;
+    margin: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-branding:hover {
+    background-color: var(--secondary-color);
+    color: #333333;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .btn-branding:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 100px 0 50px 0;
+    }
+    .content-container {
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+  }
+  
+  
