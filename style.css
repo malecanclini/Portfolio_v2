@@ -65,8 +65,8 @@ body {
   }
   
   .gato-logo {
-    width: 30px; /* Reduce el ancho del logo */
-    height: 30px; /* Reduce el alto del logo */
+    width: 400px; /* Reduce el ancho del logo */
+    height: 300px; /* Reduce el alto del logo */
     object-fit: cover;
     border-radius: 10px;
     margin-left: 20px; /* Agrega un margen a la izquierda */
@@ -82,6 +82,7 @@ body {
   h1 {
     font-size: 60px;
     line-height: 1.2;
+    color: #333333;
   }
   
   h2 {
