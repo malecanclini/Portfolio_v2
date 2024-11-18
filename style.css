@@ -65,8 +65,11 @@ body {
   }
   
   .gato-logo {
-    width: 400px; /* Reduce el ancho del logo */
-    height: 300px; /* Reduce el alto del logo */
+    .logo {
+      max-width: 400px; /* Establece un límite máximo para el ancho del logo */
+      max-height: 300px; /* Establece un límite máximo para el alto del logo */
+      width: 100%; /* Asegura que el logo se adapte al ancho disponible */
+      height: auto; /* Asegura que el logo mantenga su proporción original */
     object-fit: cover;
     border-radius: 10px;
     margin-left: 20px; /* Agrega un margen a la izquierda */
