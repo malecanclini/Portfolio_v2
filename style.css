@@ -105,6 +105,23 @@ body {
     margin-bottom: 10px;
   }
   
+  .btn-branding-outline{
+    padding: 20px 40px;
+    margin: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    background-color: #787e78;
+    color: #090909;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
   .btn-branding {
     padding: 20px 40px;
     margin: 30px;
