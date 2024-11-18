@@ -76,6 +76,7 @@ body {
   }
   
   h3, h4, h5, h6 {
+    color: #333333;
     font-family: var(--heading-font-family);
     font-weight: bold;
     color: var(--primary-color);
@@ -95,6 +96,7 @@ body {
   h2 {
     font-size: 42px;
     line-height: 1.2;
+    color: #333333;
   }
   
   .btn-branding {
