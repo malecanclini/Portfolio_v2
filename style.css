@@ -2,6 +2,10 @@ body {
     position: relative;
   }
   
+.ale-foto {
+  width: 200px;
+  height: 150px;
+}
 
   .footer {
     background-color: #8e44ad;
