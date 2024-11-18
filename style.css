@@ -1,4 +1,4 @@
-body {
+.body {
     position: relative;
   }
   
@@ -25,8 +25,9 @@ body {
   .hero {
     background-color: var(--primary-color);
     text-align: center;
-    padding: 100px 0 80px 0;
+    padding: 30px 0 80px 0;
     color: #ffffff;
+  
   }
   
   .content-container {
@@ -62,13 +63,13 @@ body {
     color: var(--primary-color);
   }
   
-  h1 {
+  .h1 {
     font-size: 60px;
     line-height: 1.2;
     color: #333333;
   }
 
-  p {
+  .p {
     font-size: 20px;
     color: #333333;
   }
