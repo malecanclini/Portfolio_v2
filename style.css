@@ -60,16 +60,15 @@ body {
   }
   
   h3, h4, h5, h6 {
-    color: #333333;
+    color: #634c6d;
     font-family: var(--heading-font-family);
     font-weight: bold;
-    color: var(--primary-color);
   }
   
   h1 {
     font-size: 60px;
     line-height: 1.2;
-    color:  #9981a3;
+    color:  #634c6d;
   }
 
   p {
