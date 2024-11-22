@@ -8,7 +8,7 @@ body {
 }
 
   .footer {
-    background-color: #8e44ad;
+    background-color: #9981a3;
     color: #333333;
     padding: 20px;
     text-align: center;
@@ -102,7 +102,7 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #8e44ad;
+    background-color: #9981a3;
     color: #090909;
     cursor: pointer;
     font-size: 16px;
@@ -113,7 +113,7 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #8e44ad;
+    background-color: #9981a3;
     color: #090909;
     cursor: pointer;
     font-size: 16px;
@@ -127,7 +127,7 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 1.2;
-    background-color: #8e44ad;
+    background-color: #9981a3;
     color: #090909;
     border: none;
     border-radius: 20px;
@@ -143,9 +143,8 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 1.2;
-    background-color: #8e44ad;
+    background-color: #9981a3;
     color: #090909;
-    background-color: var(--primary-color);
     border: none;
     border-radius: 20px;
     cursor: pointer;
