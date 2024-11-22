@@ -46,7 +46,6 @@ body {
   }
 
   .gato-logo {
-    position: absolute;
     display: block;
     margin-bottom: 10px;
     max-width: 600px;
