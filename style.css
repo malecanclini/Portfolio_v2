@@ -59,6 +59,10 @@ body {
     margin-top: 20px;
   }
   
+h2 {
+  margin-bottom: 10px;
+}
+
   h3, h4, h5, h6 {
     color: #634c6d;
     font-family: var(--heading-font-family);
