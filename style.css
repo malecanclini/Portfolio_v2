@@ -1,185 +1,164 @@
+/* ── Variables Globales ── */
+:root {
+  --purple-dark: #634c6d;
+  --purple-mid: #9981a3;
+  --purple-light: #c9b8d1;
+  --teal: #3fada8;
+  --bg: #faf8fb;
+  --text-dark: #1a1a1a;
+  --text-mid: #333333;
+}
+
+/* ── Base de Página ── */
 body {
-    position: relative;
-  }
-  
+  background-color: var(--bg);
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+/* ── Tipografía ── */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  line-height: 1.2;
+  color: var(--purple-dark);
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  color: var(--text-mid);
+  margin: 20px 0;
+}
+
+h3, h4, h5, h6 {
+  color: var(--purple-dark);
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  color: var(--text-mid);
+}
+
+/* ── Componentes Visuales ── */
+.gato-logo {
+  display: block;
+  max-width: 400px; /* Ajustado para que no sea gigante */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
 .ale-foto {
   width: 200px;
   height: 210px;
+  border-radius: 50%; /* Foto circular para look moderno */
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
 }
 
-  .footer {
-    background-color: #9981a3;
-    color: #333333;
-    padding: 20px;
-    text-align: center;
-    clear: both;
-  }
-  
-  .img {
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .hero {
-    margin-top: 30 px;
-    text-align: center;
-    padding: 30px 30px 30px 30px;
-    color: #ffffff;
-    background-color: white;
-  }
-  
-  .content-container {
-    text-align: center;
-    padding: 80px 40px;
-    border: 1px solid #dddddd;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .footer {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    clear: both;
-  }
-
-  .gato-logo {
-    display: block;
-    margin-bottom: 10px;
-    max-width: 600px;
-    max-height: 300px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-  }
-  
-h2 {
-  margin-bottom: 20px;
-  margin-top: 20px;
+/* ── Contenedor Principal (El Card) ── */
+.content-container {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 24px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 8px 40px rgba(99, 76, 109, 0.1);
+  animation: fadeUp 0.8s ease both;
 }
 
-  h3, h4, h5, h6 {
-    color: #634c6d;
-    font-family: var(--heading-font-family);
-    font-weight: bold;
-  }
-  
-  h1 {
-    font-size: 60px;
-    line-height: 1.2;
-    color:  #634c6d;
-  }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-  p {
-    font-size: 20px;
-    color: #333333;
-  }
-  
-  h2 {
-    font-size: 42px;
-    line-height: 1.2;
-    color: #333333;
-  }
+/* ── Navegación (Botones arriba a la derecha) ── */
+.container-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
 
+.btn-home, .btn-about, .btn-contact, .btn-work {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--purple-mid);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-home:hover, .btn-about:hover, .btn-contact:hover, .btn-work:hover {
+  transform: scale(1.1);
+  background-color: var(--purple-dark);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ── Botones de Acción (Grandes) ── */
+.btn-branding {
+  display: inline-block;
+  padding: 18px 40px;
+  margin: 20px 10px;
+  width: 250px;
+  text-align: center;
+  font-size: 20px;
+  background-color: var(--purple-dark);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-branding:hover {
+  background-color: var(--teal);
+  color: white;
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0 8px 20px rgba(63, 173, 168, 0.3);
+}
+
+/* ── Footer ── */
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-email {
+  color: var(--purple-mid);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 28px; }
+  .content-container { padding: 40px 20px; margin: 20px; }
   .container-btn {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: relative;
+    top: 0;
+    right: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
   }
-  
- .btn-home:hover, .btn-about:hover, .btn-contact:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .btn-home, .btn-about, .btn-contact {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #9981a3;
-    color: #090909;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  .btn-work {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #9981a3;
-    color: #090909;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .btn-branding-outline {
-    padding: 20px 40px;
-    margin: 30px;
-    width: 250px;
-    text-align: center;
-    font-size: 22px;
-    line-height: 1.2;
-    background-color: #9981a3;
-    color: #090909;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .btn-branding {
-    padding: 20px 40px;
-    margin: 30px;
-    width: 250px;
-    text-align: center;
-    font-size: 22px;
-    line-height: 1.2;
-    background-color: #9981a3;
-    color: #090909;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn-branding:hover {
-    background-color: var(--secondary-color);
-    color: #333333;
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  }
-  
-  .btn-branding:active {
-    transform: scale(0.9);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  @media (max-width: 768px) {
-    .hero {
-      padding: 100px 0 50px 0;
-    }
-    .content-container {
-      padding: 50px 20px;
-    }
-    h1 {
-      font-size: 48px;
-    }
-    h2 {
-      font-size: 36px;
-    }
-  }
-
+}
