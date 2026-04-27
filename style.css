@@ -1,3 +1,51 @@
+/* ── Arreglo de la Navegación (Botones) ── */
+
+/* 1. Ajuste del contenedor principal (la lista <ul>) */
+.container-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column; /* Forzamos columna */
+  align-items: flex-end; /* Alineamos todo a la derecha */
+  gap: 10px; /* Espaciado uniforme entre botones */
+  list-style: none; /* Quitamos los puntos de la lista */
+  padding: 0; /* Quitamos relleno por defecto */
+  margin: 0; /* Quitamos margen por defecto */
+  z-index: 100; /* Aseguramos que esté por encima de todo */
+}
+
+/* 2. Ajuste de los elementos de lista (<li>) */
+.container-btn li {
+  width: 100%; /* Forzamos a que el <li> ocupe todo el ancho disponible */
+  display: flex;
+  justify-content: flex-end; /* Alineamos el botón dentro del li a la derecha */
+}
+
+/* 3. Ajuste de los botones individuales (<a>) */
+.btn-home, .btn-about, .btn-contact, .btn-work {
+  display: block; /* Importante para que acepte ancho completo */
+  width: 140px; /* Forzamos un ancho FIJO para todos los botones */
+  padding: 12px 20px; /* Relleno uniforme */
+  border: none;
+  border-radius: 8px; /* Bordes redondeados más sutiles y modernos */
+  background-color: var(--purple-mid); /* Tu color púrpura */
+  color: white; /* Texto blanco para mejor contraste */
+  text-decoration: none; /* Quitamos subrayado */
+  font-size: 16px;
+  font-weight: 500; /* Un poco más de grosor al texto */
+  text-align: center; /* Centramos el texto DENTRO del botón */
+  transition: all 0.3s ease; /* Animación suave */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+}
+
+/* 4. Efecto Hover (al pasar el mouse) */
+.btn-home:hover, .btn-about:hover, .btn-contact:hover, .btn-work:hover {
+  transform: translateY(-3px); /* Pequeño salto hacia arriba */
+  background-color: var(--purple-dark); /* Color más oscuro al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra más pronunciada */
+}
+
 /* ── Variables Globales ── */
 :root {
   --purple-dark: #634c6d;
