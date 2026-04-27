@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,56 +17,367 @@
     <script src="https://kit.fontawesome.com/6a50e3be5d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"  content="Portfolio of Alejandra Canclini" />
-  <title>Portfolio Contact - Alejandra Canclini</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Alejandra Canclini — front-end developer based in Paraguay." />
+    <title>Contact - Alejandra Canclini</title>
+
+    <style>
+      /* ── Variables ── */
+      :root {
+        --purple-dark:  #634c6d;
+        --purple-mid:   #9981a3;
+        --purple-light: #c9b8d1;
+        --teal:         #3FADA8;
+        --teal-light:   #6fcac6;
+        --text-dark:    #1a1a1a;
+        --text-mid:     #333333;
+        --bg:           #faf8fb;
+      }
+
+      /* ── Page base ── */
+      body {
+        background-color: var(--bg);
+        font-family: 'Work Sans', sans-serif;
+      }
+
+      /* ── Decorative blob background ── */
+      .contact-wrapper {
+        position: relative;
+        overflow: hidden;
+      }
+      .contact-wrapper::before {
+        content: '';
+        position: absolute;
+        top: -120px;
+        right: -120px;
+        width: 420px;
+        height: 420px;
+        background: radial-gradient(circle, rgba(159,129,163,0.18) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .contact-wrapper::after {
+        content: '';
+        position: absolute;
+        bottom: -80px;
+        left: -80px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(63,173,168,0.15) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* ── Content card ── */
+      .contact-card {
+        position: relative;
+        z-index: 1;
+        background: #ffffff;
+        border-radius: 24px;
+        box-shadow: 0 8px 40px rgba(99, 76, 109, 0.10);
+        padding: 60px 56px;
+        max-width: 700px;
+        margin: 0 auto;
+        animation: fadeUp 0.7s ease both;
+      }
+
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(32px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      /* ── Heading ── */
+      .contact-card h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 52px;
+        color: var(--purple-dark);
+        margin-bottom: 8px;
+        line-height: 1.15;
+      }
+      .contact-card .subtitle {
+        font-size: 17px;
+        color: #888;
+        margin-bottom: 44px;
+        font-weight: 300;
+      }
+
+      /* ── Divider ── */
+      .teal-divider {
+        width: 48px;
+        height: 3px;
+        background: var(--teal);
+        border-radius: 2px;
+        margin: 0 0 44px 0;
+      }
+
+      /* ── Email row ── */
+      .contact-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 36px;
+        animation: fadeUp 0.7s 0.15s ease both;
+      }
+      .contact-icon-wrap {
+        width: 46px;
+        height: 46px;
+        border-radius: 12px;
+        background: rgba(63,173,168,0.10);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: background 0.2s;
+      }
+      .contact-icon-wrap i {
+        font-size: 18px;
+        color: var(--teal);
+      }
+      .contact-row a {
+        font-size: 17px;
+        color: var(--purple-dark);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      .contact-row a:hover { color: var(--teal); }
+      .contact-row:hover .contact-icon-wrap {
+        background: rgba(63,173,168,0.22);
+      }
+
+      /* ── Section labels ── */
+      .section-label {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--purple-mid);
+        margin-bottom: 18px;
+        margin-top: 36px;
+      }
+
+      /* ── Social icons ── */
+      .socials-row {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 48px;
+        animation: fadeUp 0.7s 0.25s ease both;
+      }
+      .social-btn {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: var(--bg);
+        border: 1.5px solid var(--purple-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.25s ease;
+      }
+      .social-btn i {
+        font-size: 20px;
+        color: var(--purple-dark);
+        transition: color 0.25s;
+      }
+      .social-btn:hover {
+        background: var(--teal);
+        border-color: var(--teal);
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(63,173,168,0.30);
+      }
+      .social-btn:hover i {
+        color: #ffffff;
+      }
+
+      /* ── Form ── */
+      .contact-form {
+        animation: fadeUp 0.7s 0.35s ease both;
+      }
+      .contact-form .form-label {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--purple-dark);
+        margin-bottom: 6px;
+        letter-spacing: 0.03em;
+      }
+      .contact-form .form-control {
+        border: 1.5px solid #e0d6e6;
+        border-radius: 12px;
+        padding: 12px 16px;
+        font-size: 15px;
+        font-family: 'Work Sans', sans-serif;
+        color: var(--text-dark);
+        background: var(--bg);
+        transition: border-color 0.2s, box-shadow 0.2s;
+      }
+      .contact-form .form-control:focus {
+        border-color: var(--teal);
+        box-shadow: 0 0 0 3px rgba(63,173,168,0.15);
+        outline: none;
+        background: #ffffff;
+      }
+      .contact-form textarea {
+        resize: vertical;
+        min-height: 130px;
+      }
+      .btn-send {
+        width: 100%;
+        padding: 14px;
+        background: var(--purple-dark);
+        color: #ffffff;
+        border: none;
+        border-radius: 14px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Work Sans', sans-serif;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        margin-top: 8px;
+        letter-spacing: 0.03em;
+      }
+      .btn-send:hover {
+        background: var(--teal);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(63,173,168,0.30);
+      }
+      .btn-send:active {
+        transform: translateY(0);
+      }
+
+      /* ── Success message ── */
+      .success-msg {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        border-radius: 14px;
+        background: rgba(63,173,168,0.10);
+        color: var(--teal);
+        font-weight: 500;
+        margin-top: 16px;
+        font-size: 16px;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 600px) {
+        .contact-card {
+          padding: 36px 24px;
+          border-radius: 16px;
+        }
+        .contact-card h1 {
+          font-size: 36px;
+        }
+      }
+    </style>
   </head>
+
   <body>
+    <!-- Nav -->
     <div class="container">
-      <img class="gato-logo" src="https://imgcdn.stablediffusionweb.com/2024/9/12/ab11b290-3112-4371-93e0-f07b1763a1c0.jpg" alt="Imagen" width="400" height="300">
+      <img class="gato-logo" src="https://imgcdn.stablediffusionweb.com/2024/9/12/ab11b290-3112-4371-93e0-f07b1763a1c0.jpg" alt="Logo" width="400" height="300">
       <ul class="btn container-btn">
-        <a class="btn btn-home" href="/index.html">Home</a>
-        <a class="btn btn-about" href="/about.html">About</a>
-        <a class="btn btn-work" href="/work.html">Work</a>
+        <a class="btn btn-home"    href="/index.html">Home</a>
+        <a class="btn btn-about"   href="/about.html">About</a>
+        <a class="btn btn-work"    href="/work.html">Work</a>
         <a class="btn btn-contact" href="/contact.html">Contact</a>
-       </ul>         
+      </ul>
     </div>
-    </div>
-    <div class="content-container container">
-       <div class="content">
-          <h1 class="mb-5">Let's get in touch!</h1>
-          <h3>email</h3>
-          <p><i class="fa fa-envelope" aria-hidden="true" style="color: #3FADA8;"></i>
-            <a class="contact-email" title="link to send me an email" href="mailto:malecanclini@gmail.com?subject=Saw your portfolio">
-            malecanclini@gmail.com</a></p>
-          <h3>socials</h3>
-          <p class="contact">
-            <a title="linkedin link" href="https://www.linkedin.com/in/alejandracanclini1/">
-              <i class="fab fa-linkedin" aria-hidden="true" style="color: #3FADA8;">
-              </i></a>
 
-            <a title="github link" href="https://github.com/malecanclini/">
-              <i class="fab fa-github" aria-hidden="true" style="color: #3FADA8;">
-              </i></a>
-         
-            <a title="instagram link" href="https://www.instagram.com/alecanclini/">
-                <i class="fab fa-instagram" aria-hidden="true" style="color: #3FADA8;">
-                </i> </a>
+    <!-- Contact section -->
+    <div class="content-container contact-wrapper container">
+      <div class="contact-card">
 
-           </p>
-       </div>
-      </div>
-       <footer>
-        <div class="d-flex justify-content-center mb-5">
-        <a class="contact-email mt-3" href="mailto:malecanclini@gmail.com">malecanclini@gmail.com</a>
+        <h1>Let's get<br><em>in touch.</em></h1>
+        <p class="subtitle">I'd love to hear from you — whether it's a project, a question, or just a hello 👋</p>
+        <div class="teal-divider"></div>
+
+        <!-- Email -->
+        <p class="section-label">Email</p>
+        <div class="contact-row">
+          <div class="contact-icon-wrap">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <a href="mailto:malecanclini@gmail.com?subject=Saw your portfolio">
+            malecanclini@gmail.com
+          </a>
         </div>
 
-        <p class="text-center mt-5 mb-5"> This portfolio was coded by Alejandra Canclini</a>
-        </p>
-      </footer>  
+        <!-- Socials -->
+        <p class="section-label">Find me on</p>
+        <div class="socials-row">
+          <a class="social-btn" href="https://www.linkedin.com/in/alejandracanclini1/" title="LinkedIn" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="social-btn" href="https://github.com/malecanclini/" title="GitHub" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="social-btn" href="https://www.instagram.com/alecanclini/" title="Instagram" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
 
-</body>
+        <!-- Contact form -->
+        <p class="section-label">Send a message</p>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="mb-3">
+            <label class="form-label" for="name">Your name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="email">Your email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-send">
+            <i class="fa fa-paper-plane me-2"></i> Send message
+          </button>
+          <div class="success-msg" id="successMsg">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="d-flex justify-content-center mb-5">
+        <a class="contact-email mt-3" href="mailto:malecanclini@gmail.com">malecanclini@gmail.com</a>
+      </div>
+      <p class="text-center mt-5 mb-5">This portfolio was coded by Alejandra Canclini</p>
+    </footer>
+
+    <script>
+      const form = document.getElementById('contactForm');
+      const successMsg = document.getElementById('successMsg');
+
+      form.addEventListener('submit', async function(e) {
+        const action = form.getAttribute('action');
+        // If Formspree not configured yet, show success demo
+        if (action.includes('YOUR_FORM_ID')) {
+          e.preventDefault();
+          form.reset();
+          successMsg.style.display = 'block';
+          setTimeout(() => { successMsg.style.display = 'none'; }, 4000);
+          return;
+        }
+        // Real Formspree submission
+        e.preventDefault();
+        const data = new FormData(form);
+        const res = await fetch(action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+        if (res.ok) {
+          form.reset();
+          successMsg.style.display = 'block';
+          setTimeout(() => { successMsg.style.display = 'none'; }, 4000);
+        }
+      });
+    </script>
+
+  </body>
 </html>
