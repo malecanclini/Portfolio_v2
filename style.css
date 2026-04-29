@@ -1,50 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap');
-
-/* 1. Ajuste del contenedor principal (la lista <ul>) */
-.container-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column; /* Forzamos columna */
-  align-items: flex-end; /* Alineamos todo a la derecha */
-  gap: 10px; /* Espaciado uniforme entre botones */
-  list-style: none; /* Quitamos los puntos de la lista */
-  padding: 0; /* Quitamos relleno por defecto */
-  margin: 0; /* Quitamos margen por defecto */
-  z-index: 100; /* Aseguramos que esté por encima de todo */
-}
-
-/* 2. Ajuste de los elementos de lista (<li>) */
-.container-btn li {
-  width: 100%; /* Forzamos a que el <li> ocupe todo el ancho disponible */
-  display: flex;
-  justify-content: flex-end; /* Alineamos el botón dentro del li a la derecha */
-}
-
-/* 3. Ajuste de los botones individuales (<a>) */
-.btn-home, .btn-about, .btn-contact, .btn-work {
-  display: block; /* Importante para que acepte ancho completo */
-  width: 140px; /* Forzamos un ancho FIJO para todos los botones */
-  padding: 12px 20px; /* Relleno uniforme */
-  border: none;
-  border-radius: 8px; /* Bordes redondeados más sutiles y modernos */
-  background-color: var(--purple-mid); /* Tu color púrpura */
-  color: white; /* Texto blanco para mejor contraste */
-  text-decoration: none; /* Quitamos subrayado */
-  font-size: 16px;
-  font-weight: 500; /* Un poco más de grosor al texto */
-  text-align: center; /* Centramos el texto DENTRO del botón */
-  transition: all 0.3s ease; /* Animación suave */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
-}
-
-/* 4. Efecto Hover (al pasar el mouse) */
-.btn-home:hover, .btn-about:hover, .btn-contact:hover, .btn-work:hover {
-  transform: translateY(-3px); /* Pequeño salto hacia arriba */
-  background-color: var(--purple-dark); /* Color más oscuro al pasar el mouse */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra más pronunciada */
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@300;400;500&display=swap');
 
 /* ── Variables Globales ── */
 :root {
@@ -57,12 +11,11 @@
   --text-mid: #333333;
 }
 
-/* ── Base de Página ── */
+/* ── Base ── */
 body {
   background-color: var(--bg);
   font-family: 'Work Sans', sans-serif;
   margin: 0;
-  position: relative;
 }
 
 /* ── Tipografía ── */
@@ -80,36 +33,33 @@ h2 {
   margin: 20px 0;
 }
 
-h3, h4, h5, h6 {
-  color: var(--purple-dark);
-  font-weight: bold;
-}
-
 p {
   font-size: 20px;
   color: var(--text-mid);
 }
 
-/* ── Componentes Visuales ── */
+/* ── Logo ── */
 .gato-logo {
   display: block;
-  max-width: 400px; /* Ajustado para que no sea gigante */
+  max-width: 200px;
   width: 100%;
   height: auto;
-  border-radius: 10px;
   margin: 20px auto;
 }
 
+/* ── Imagen central ── */
 .ale-foto {
-  width: 200px;
-  height: 210px;
-  border-radius: 50%; /* Foto circular para look moderno */
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* esquinas suaves */
   object-fit: cover;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  margin: 20px auto;
+  display: block;
 }
 
-/* ── Contenedor Principal (El Card) ── */
+/* ── Contenedor principal ── */
 .content-container {
   text-align: center;
   padding: 60px 40px;
@@ -127,7 +77,7 @@ p {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Navegación (Botones arriba a la derecha) ── */
+/* ── Navegación ── */
 .container-btn {
   position: absolute;
   top: 20px;
@@ -140,25 +90,27 @@ p {
 }
 
 .btn-home, .btn-about, .btn-contact, .btn-work {
-  padding: 10px 20px;
+  width: 140px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: var(--purple-mid);
   color: white;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.3s ease;
+  font-weight: 500;
   text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .btn-home:hover, .btn-about:hover, .btn-contact:hover, .btn-work:hover {
-  transform: scale(1.1);
+  transform: translateY(-3px);
   background-color: var(--purple-dark);
-  color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-/* ── Botones de Acción (Grandes) ── */
+/* ── Botones grandes ── */
 .btn-branding {
   display: inline-block;
   padding: 18px 40px;
@@ -171,12 +123,11 @@ p {
   text-decoration: none;
   border-radius: 50px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .btn-branding:hover {
   background-color: var(--teal);
-  color: white;
   transform: scale(1.05) translateY(-3px);
   box-shadow: 0 8px 20px rgba(63, 173, 168, 0.3);
 }
@@ -202,11 +153,5 @@ footer {
   .content-container { padding: 40px 20px; margin: 20px; }
   .container-btn {
     position: relative;
-    top: 0;
-    right: 0;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-}
+
