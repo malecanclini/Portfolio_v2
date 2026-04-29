@@ -1,110 +1,47 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link 
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
-      rel="stylesheet" 
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/6a50e3be5d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio de Alejandra Canclini — Ingeniera Ambiental y Frontend Developer basada en Paraguay." />
-    <title>Inicio - Alejandra Canclini</title>
-  </head>
+<nav>
+  <ul class="container-btn">
+    <li><a class="btn-home" href="index.html">Home</a></li>
+    <li><a class="btn-about" href="about.html">About Me</a></li>
+    <li><a class="btn-work" href="work.html">Projects</a></li>
+    <li><a class="btn-contact" href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <body>
+<div class="container py-5">
+  <img class="gato-logo" src="images/logo-gato.png" alt="Logo: purple cat, brand of Alejandra Canclini" width="120" height="120">
 
-    <!-- Navegación -->
-    <nav>
-      <ul class="container-btn">
-        <li><a class="btn-home"    href="index.html">Inicio</a></li>
-        <li><a class="btn-about"   href="about.html">Sobre mí</a></li>
-        <li><a class="btn-work"    href="work.html">Proyectos</a></li>
-        <li><a class="btn-contact" href="contact.html">Contacto</a></li>
-      </ul>
-    </nav>
-
-    <div class="container py-5">
-      <img 
-        class="gato-logo" 
-        src="images/logo-gato.png" 
-        alt="Logo gato violeta, marca de Alejandra Canclini"
-        width="120" height="120"
-      >
-
-      <main class="content-container hero-wrapper mt-4">
-
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-
-        <div class="hero-card">
-
-          <div class="greeting-chip">
-            <i class="fa-solid fa-cat"></i>
-            Hola, soy
-          </div>
-
-          <img 
-            class="ale-foto-hero" 
-            src="images/contact.me.jpg" 
-            alt="Foto de Alejandra Canclini"
-            loading="lazy"
-          >
-
-          <h1 class="hero-name">
-            Alejandra<br><em>Canclini</em>
-          </h1>
-
-          <p class="hero-tagline">
-            Ingeniera Ambiental &amp; Frontend Developer<br>
-            Uno ciencias ambientales con tecnologías geoespaciales interactivas.
-          </p>
-
-          <div class="dot-divider">
-            <span></span><span></span><span></span>
-          </div>
-
-          <div class="hero-ctas">
-            <a class="btn-primary-hero" href="work.html">
-              <i class="fa-solid fa-folder-open"></i> Ver proyectos
-            </a>
-            <a class="btn-secondary-hero" href="contact.html">
-              <i class="fa-solid fa-paper-plane"></i> Contactame
-            </a>
-          </div>
-
-          <div class="skills-strip">
-            <p>Tecnologías</p>
-            <div class="skills-tags">
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Bootstrap</span>
-              <span class="skill-tag">Leaflet.js</span>
-              <span class="skill-tag">QGIS</span>
-              <span class="skill-tag">Netlify</span>
-            </div>
-          </div>
-
-        </div>
-      </main>
+  <main class="content-container mt-4">
+    <div class="hero-header">
+      <p class="mb-2">
+        <i class="fa-solid fa-cat" style="color: var(--purple-dark);"></i>
+        Hi, I’m
+      </p>
+      <h1>Alejandra Canclini</h1>
     </div>
 
-    <footer>
-      <div class="d-flex justify-content-center mb-4">
-        <a class="contact-email" href="mailto:malecanclini@gmail.com">
-          <i class="fa-regular fa-envelope me-2"></i>malecanclini@gmail.com
-        </a>
-      </div>
-      <p class="text-center text-muted" style="font-size: 14px;">
-        Diseñado y codeado por Alejandra Canclini
-      </p>
-    </footer>
+    <img class="ale-foto shadow-sm" src="images/contact.jpg" alt="Photo of Alejandra Canclini" width="300" height="300" loading="lazy">
 
-  </body>
-</html>
+    <h2 class="mt-4">Environmental Engineer & Frontend Developer</h2>
+    
+    <p class="mx-auto mb-5" style="max-width: 650px;">
+      I combine environmental sciences with interactive geospatial technologies. 
+      Currently, I create digital tools for territorial analysis and data visualization.
+    </p>
+
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+      <a class="btn-branding" href="work.html">See Projects</a>
+      <a class="btn-branding" href="contact.html">Contact Me</a>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <div class="d-flex justify-content-center mb-4">
+    <a class="contact-email" href="mailto:malecanclini@gmail.com">
+      <i class="fa-regular fa-envelope me-2"></i>malecanclini@gmail.com
+    </a>
+  </div>
+  <p class="text-center text-muted" style="font-size: 14px;">
+    Designed and coded by Alejandra Canclini
+  </p>
+</footer>
