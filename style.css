@@ -82,11 +82,11 @@ a {
 /* Logo superior */
 .gato-logo {
   display: block;
-  max-width: 120px;
   width: 100%;
+  max-width: 25%;
+  min-width: 150px; /* piso mínimo para que no quede mini en celular */
   height: auto;
-  
-  margin: 20px auto;
+  margin: 30px auto; /* le subí el margen para que respire más */
 }
 
 /* Foto de perfil genérica */
