@@ -1,13 +1,7 @@
-/* ══════════════════════════════════════════
-   FUENTES — importar UNA SOLA VEZ acá
-   Eliminar los <link> de Google Fonts en
-   todos los archivos HTML
-   ══════════════════════════════════════════ */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap');
 
-/* ══════════════════════════════════════════
-   VARIABLES GLOBALES
-   ══════════════════════════════════════════ */
+
 :root {
   --purple-dark:  #634c6d;
   --purple-mid:   #9981a3;
@@ -21,9 +15,7 @@
   --font-heading: 'Playfair Display', serif;
 }
 
-/* ══════════════════════════════════════════
-   RESET BASE
-   ══════════════════════════════════════════ */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -40,9 +32,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ══════════════════════════════════════════
-   TIPOGRAFÍA GLOBAL
-   ══════════════════════════════════════════ */
+
 h1 {
   font-family: var(--font-heading);
   font-size: 60px;
@@ -87,9 +77,7 @@ a {
   font-family: var(--font-body);
 }
 
-/* ══════════════════════════════════════════
-   COMPONENTES COMPARTIDOS
-   ══════════════════════════════════════════ */
+
 
 /* Logo superior */
 .gato-logo {
@@ -195,7 +183,7 @@ a {
   justify-content: flex-end;
 }
 
-.btn-home, .btn-about, .btn-contact, .btn-work {
+.btn-home, .btn-about, .btn-contact, .btn-work, btn-writing {
   display: block;
   width: 130px;
   padding: 10px 18px;
