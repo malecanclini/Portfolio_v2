@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,12 +20,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio Alejandra canclini front-end web development based in Paraguay." />
-    <title>Projects - Alejandra Canclini</title>
+    <meta name="description" content="Proyectos de Alejandra Canclini - Frontend Development y SIG" />
+    <title>Proyectos - Alejandra Canclini</title>
   </head>
   <body>
+    <!-- Navegación -->
     <div class="container">
-      <img class="gato-logo" src="https://imgcdn.stablediffusionweb.com/2024/9/12/ab11b290-3112-4371-93e0-f07b1763a1c0.jpg" alt="Imagen" width="400" height="300">
+      <img class="gato-logo" src="https://imgcdn.stablediffusionweb.com/2024/9/12/ab11b290-3112-4371-93e0-f07b1763a1c0.jpg" alt="Logo Alejandra Canclini" width="400" height="300">
       <ul class="btn container-btn">
         <a class="btn btn-home" href="/index.html">Home</a>
         <a class="btn btn-about" href="/about.html">About</a>
@@ -34,59 +35,244 @@
       </ul>         
     </div>
 
+    <!-- Contenido Principal -->
     <div class="content-container container">
-      <h1 class="text-center focus">Projects</h1>
+      <h1 class="text-center focus mb-5">Mis Proyectos</h1>
 
-      <div class="project-description">
+      <!-- ══════════════════════════════════════════
+           SECCIÓN: PROYECTOS SIG (GEOESPACIALES)
+           ══════════════════════════════════════════ -->
+      <div class="projects-section mb-5">
+        <h2 class="section-heading mb-4">
+          <i class="fa-solid fa-map me-3" style="color: var(--teal);"></i>Proyectos SIG & Geoespaciales
+        </h2>
 
-        <!-- Proyecto 1: Pet Adoption -->
-        <div class="project-description">
-          <h2 class="mb-5">Pet adoption</h2>
-          <p class="mb-5 text-muted">
-            Finding Forever Homes: The Transformative Power of Pet Adoption
-          </p>
-          <img class="gato-foto" src="/images/pet.adoption.JPG" alt="Imagen" width="200" height="150">
-          <a href="https://www.shecodes.io/cohorts/1599/projects/2045372?_gl=1*10b9y1h*_gcl_au*Njg5NDEwMDE5LjE3MjcyNjgyNzQuMTY5NjMxMTk5Ny4xNzI4OTEwMjIyLjE3Mjg5MTAyMjE" class="btn btn-branding-outline">Learn more</a>
+        <!-- Proyecto SIG 1: NDVI Paraguay -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>NDVI Paraguay - Análisis de Cobertura Vegetal</h3>
+            <span class="project-badge badge-sig">SIG</span>
+            <span class="project-badge badge-featured">Featured</span>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img class="project-image" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="NDVI Paraguay">
+            </div>
+            <div class="col-lg-6">
+              <p class="project-description">
+                Mapa interactivo del <strong>Índice de Vegetación por Diferencia Normalizada (NDVI)</strong> 
+                por departamento en Paraguay. Utiliza datos satelitales de <strong>MODIS y Sentinel-2</strong> 
+                para monitorear cambios en la cobertura vegetal y detectar áreas de deforestación.
+              </p>
+              <h6 class="mt-4 mb-2">Características:</h6>
+              <ul class="project-features">
+                <li>Visualización interactiva de capas NDVI</li>
+                <li>Datos satelitales actualizados mensualmente</li>
+                <li>Análisis temporal de cobertura vegetal</li>
+                <li>Exportación de mapas y datos</li>
+              </ul>
+              <div class="project-tech mt-3 mb-4">
+                <span class="tech-tag">Leaflet.js</span>
+                <span class="tech-tag">QGIS</span>
+                <span class="tech-tag">Sentinel-2</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Teledetección</span>
+              </div>
+              <a href="https://ndvipararaguay2026.netlify.app/" target="_blank" class="btn btn-branding">
+                <i class="fa-solid fa-map-location-dot me-2"></i>Explorar Mapa
+              </a>
+            </div>
+          </div>
         </div>
 
-        <!-- Proyecto 2: Weather App -->
-        <div class="project-description">
-          <h2 class="mb-5">Weather App</h2>
-          <p class="mb-5">
-            Check the weather in any city or your current location and view the results.
-          </p>
-          <img class="clima-imagen" src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/30/posts/33893/final_image/app.png" alt="Imagen" width="200" height="150">    
-          <a title="Weather app" href="https://www.shecodes.io/cohorts/2093/projects/2436859?_gl=1*10b9y1h*_gcl_au*Njg5NDEwMDE5LjE3MjcyNjgyNzQuMTY5NjMxMTk5Ny4xNzI4OTEwMjIyLjE3Mjg5MTAyMjE" class="btn btn-branding-outline">Learn more</a>
-        </div>
+        <!-- Proyecto SIG 2: Violencia de Género Paraguay -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Violencia de Género Paraguay - Recursos y Atención</h3>
+            <span class="project-badge badge-sig">SIG Social</span>
+          </div>
 
-        <!-- Proyecto 3: Violencia de Género Paraguay -->
-        <div class="project-description">
-          <h2 class="mb-5">Violencia de Género Paraguay</h2>
-          <p class="mb-5">
-            Mapa interactivo de recursos de atención y denuncia por violencia de género en Paraguay. Todos los servicios son gratuitos.
-          </p>
-          <img class="clima-imagen" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop" alt="Violencia de Género Paraguay" width="200" height="150">
-          <a href="https://violenciadegeneroparaguay.netlify.app/" target="_blank" class="btn btn-branding-outline">Learn more</a>
-        </div>
-
-        <!-- Proyecto 4: NDVI Paraguay -->
-        <div class="project-description">
-          <h2 class="mb-5">NDVI Paraguay</h2>
-          <p class="mb-5">
-            Mapa interactivo del Índice de Vegetación por Diferencia Normalizada (NDVI) por departamento en Paraguay, con datos satelitales MODIS/Sentinel-2.
-          </p>
-          <img class="clima-imagen" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="NDVI Paraguay" width="200" height="150">
-          <a href="https://ndvipararaguay2026.netlify.app/" target="_blank" class="btn btn-branding-outline">Learn more</a>
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img class="project-image" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop" alt="Violencia de Género">
+            </div>
+            <div class="col-lg-6">
+              <p class="project-description">
+                Mapa interactivo que centraliza <strong>recursos de atención y denuncia por violencia de género</strong> 
+                en Paraguay. Todos los servicios incluidos son <strong>gratuitos y confidenciales</strong>. 
+                Un proyecto de impacto social que facilita el acceso a ayuda.
+              </p>
+              <h6 class="mt-4 mb-2">Características:</h6>
+              <ul class="project-features">
+                <li>Localización de centros de atención</li>
+                <li>Información de líneas de denuncia 24/7</li>
+                <li>Recursos legales y psicológicos</li>
+                <li>Búsqueda por proximidad geográfica</li>
+              </ul>
+              <div class="project-tech mt-3 mb-4">
+                <span class="tech-tag">Leaflet.js</span>
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Impacto Social</span>
+                <span class="tech-tag">Datos Abiertos</span>
+              </div>
+              <a href="https://violenciadegeneroparaguay.netlify.app/" target="_blank" class="btn btn-branding">
+                <i class="fa-solid fa-phone me-2"></i>Acceder a Recursos
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
+
+      <!-- ══════════════════════════════════════════
+           SECCIÓN: PROYECTOS FRONTEND
+           ══════════════════════════════════════════ -->
+      <div class="projects-section">
+        <h2 class="section-heading mb-4">
+          <i class="fa-solid fa-laptop-code me-3" style="color: var(--teal);"></i>Proyectos Frontend
+        </h2>
+
+        <!-- Proyecto Frontend 1: Pet Adoption -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Pet Adoption - Encuentra tu Mascota Ideal</h3>
+            <span class="project-badge badge-frontend">Frontend</span>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img class="project-image" src="/images/pet.adoption.JPG" alt="Pet Adoption">
+            </div>
+            <div class="col-lg-6">
+              <p class="project-description">
+                Aplicación interactiva que facilita la adopción de mascotas. Muestra listados actualizados 
+                de animales disponibles para adopción, con información detallada y testimonios de historias 
+                exitosas de adopción.
+              </p>
+              <h6 class="mt-4 mb-2">Características:</h6>
+              <ul class="project-features">
+                <li>Catálogo de mascotas disponibles</li>
+                <li>Filtros de búsqueda avanzada</li>
+                <li>Historias de adopción exitosas</li>
+                <li>Interfaz responsive y accesible</li>
+              </ul>
+              <div class="project-tech mt-3 mb-4">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <a href="https://www.shecodes.io/cohorts/1599/projects/2045372?_gl=1*10b9y1h*_gcl_au*Njg5NDEwMDE5LjE3MjcyNjgyNzQuMTY5NjMxMTk5Ny4xNzI4OTEwMjIyLjE3Mjg5MTAyMjE" target="_blank" class="btn btn-branding-outline">
+                <i class="fa-solid fa-paw me-2"></i>Ver Proyecto
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto Frontend 2: Weather App -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Weather App - Pronóstico Meteorológico</h3>
+            <span class="project-badge badge-frontend">Frontend</span>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img class="project-image" src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/30/posts/33893/final_image/app.png" alt="Weather App">
+            </div>
+            <div class="col-lg-6">
+              <p class="project-description">
+                Aplicación de clima que permite consultar el pronóstico en cualquier ciudad o en tu ubicación actual. 
+                Utiliza APIs de datos meteorológicos para proporcionar información precisa y actualizada en tiempo real.
+              </p>
+              <h6 class="mt-4 mb-2">Características:</h6>
+              <ul class="project-features">
+                <li>Búsqueda de clima por ciudad</li>
+                <li>Geolocalización automática</li>
+                <li>Pronóstico extendido (5-7 días)</li>
+                <li>Indicadores meteorológicos completos</li>
+              </ul>
+              <div class="project-tech mt-3 mb-4">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API REST</span>
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">Geolocation API</span>
+              </div>
+              <a href="https://www.shecodes.io/cohorts/2093/projects/2436859?_gl=1*10b9y1h*_gcl_au*Njg5NDEwMDE5LjE3MjcyNjgyNzQuMTY5NjMxMTk5Ny4xNzI4OTEwMjIyLjE3Mjg5MTAyMjE" target="_blank" class="btn btn-branding-outline">
+                <i class="fa-solid fa-cloud me-2"></i>Ver Proyecto
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ══════════════════════════════════════════
+           SECCIÓN: PRÓXIMOS PROYECTOS
+           ══════════════════════════════════════════ -->
+      <div class="projects-section mt-5 pt-5 border-top">
+        <h2 class="section-heading mb-4">
+          <i class="fa-solid fa-rocket me-3" style="color: var(--teal);"></i>En Desarrollo
+        </h2>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="upcoming-project-card">
+              <div class="project-coming-soon">
+                <i class="fa-solid fa-code"></i>
+                <p>Próximamente</p>
+              </div>
+              <h5>Dashboard SIG Interactivo</h5>
+              <p>Plataforma de análisis geoespacial con visualización de múltiples capas temáticas y análisis espacio-temporal.</p>
+              <div class="project-tech mt-3">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Leaflet</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="upcoming-project-card">
+              <div class="project-coming-soon">
+                <i class="fa-solid fa-map"></i>
+                <p>Próximamente</p>
+              </div>
+              <h5>Sistema de Monitoreo Ambiental</h5>
+              <p>Plataforma de monitoreo de indicadores ambientales con alertas automáticas y reportes generados dinámicamente.</p>
+              <div class="project-tech mt-3">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">GeoJSON</span>
+                <span class="tech-tag">QGIS</span>
+                <span class="tech-tag">Bases de Datos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Final -->
+      <div class="row mb-5 justify-content-center" style="margin-top: 60px;">
+        <div class="col text-center">
+          <p style="margin-bottom: 20px; color: #666;">¿Te interesa colaborar o necesitas una solución SIG personalizada?</p>
+          <a class="btn btn-branding" href="/contact.html">
+            <i class="fa-solid fa-envelope me-2"></i>Contáctame
+          </a>
+        </div>
+      </div>
+
     </div>
 
+    <!-- Footer -->
     <footer>
       <div class="d-flex justify-content-center mb-5">
         <a class="contact-email mt-3" href="mailto:malecanclini@gmail.com">malecanclini@gmail.com</a>
       </div>
       <p class="text-center mt-5 mb-5">This portfolio was coded by Alejandra Canclini</p>
     </footer>  
+
   </body>
 </html>
