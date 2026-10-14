@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portafolio de Alejandra Canclini — Ingeniera Ambiental y Frontend Developer basada en Paraguay." />
     <title>Inicio - Alejandra Canclini</title>
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link 
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
       rel="stylesheet" 
       crossorigin="anonymous"
     />
@@ -22,25 +22,21 @@
 
     <!-- Navegación -->
     <nav>
-
-          <div class="container">
-      <img class="gato-logo" src="https://imgcdn.stablediffusionweb.com/2024/9/12/ab11b290-3112-4371-93e0-f07b1763a1c0.jpg" alt="Imagen" width="400" height="300">
-      <ul class="btn container-btn">
-        <a class="btn btn-home" href="/index.html">Home</a>
-        <a class="btn btn-about" href="/about.html">About</a>
-        <a class="btn btn-work" href="/work.html">Work</a>
-        <a class="btn-writing" href="writing.html">Escritura</a>
-        <a class="btn btn-contact" href="/contact.html">Contact</a>
-      </ul>         
-    </div>
+      <div class="container d-flex align-items-center justify-content-between py-3">
+        <img class="gato-logo img-fluid" src="https://imgcdn.stablediffusionweb.com/2024/9/12/ab11b290-3112-4371-93e0-f07b1763a1c0.jpg" alt="Logo gato" style="max-height: 50px; width: auto;">
+        <ul class="btn container-btn mb-0 list-unstyled d-flex gap-2">
+          <li><a class="btn btn-home" href="/index.html">Home</a></li>
+          <li><a class="btn btn-about" href="/about.html">About</a></li>
+          <li><a class="btn btn-work" href="/work.html">Work</a></li>
+          <li><a class="btn btn-writing" href="writing.html">Escritura</a></li>
+          <li><a class="btn btn-contact" href="/contact.html">Contact</a></li>
+        </ul>         
+      </div>
     </nav>
 
     <!-- Contenido principal -->
     <div class="container py-5">
-
-
-
-      <main class="content-container hero-wrapper mt-4">
+      <main class="content-container hero-wrapper mt-4 position-relative">
 
         <!-- Blobs decorativos -->
         <div class="blob blob-1"></div>
@@ -68,15 +64,15 @@
             Alejandra<br><em>Canclini</em>
           </h1>
             
-            <!-- Rol principal -->
-            <p class="hero-title">
-              Environmental Engineer | GIS Analyst | Cadastral Consultant | Programmer in Development | Community Impact Volunteer
-
-            </p>            
-            <!-- Mensaje principal -->
-            <p class="hero-tagline">
-              Environmental Engineer with experience in GIS, spatial data management, and territorial analysis. Passionate about geospatial technologies, remote sensing, and Earth Observation for sustainable development. Skilled in QGIS, ArcGIS, and OpenStreetMap, with a strong interest in environmental monitoring, spatial analysis, and innovative geospatial solutions.
-            </p>
+          <!-- Rol principal -->
+          <p class="hero-title">
+            Environmental Engineer | GIS Analyst | Cadastral Consultant | Programmer in Development | Community Impact Volunteer
+          </p>            
+            
+          <!-- Mensaje principal -->
+          <p class="hero-tagline">
+            Environmental Engineer with experience in GIS, spatial data management, and territorial analysis. Passionate about geospatial technologies, remote sensing, and Earth Observation for sustainable development. Skilled in QGIS, ArcGIS, and OpenStreetMap, with a strong interest in environmental monitoring, spatial analysis, and innovative geospatial solutions.
+          </p>
           
           <!-- Divisor -->
           <div class="dot-divider">
@@ -84,10 +80,11 @@
           </div>
 
           <!-- Botones -->
-          <div class="hero-ctas">
+          <div class="hero-ctas mb-4">
             <a class="btn-primary-hero" href="work.html">
               <i class="fa-solid fa-folder-open"></i> Ver proyectos
             </a>
+          </div>
 
           <!-- Strip de tecnologías -->
           <div class="skills-strip">
