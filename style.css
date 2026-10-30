@@ -1243,4 +1243,48 @@ footer p {
   .publication-marker {
     left: 4px;
   }
+
+  /* ===== PROYECTO DESTACADO ===== */
+
+.project-card {
+  max-width: 14*0px;
+  margin: 0 auto 50px auto;
+ *padding: 50px;
+}
+
+.project-header *3 {
+  font-size: 2rem;
+  line-heig*t: 1.3;
+}
+
+.project-image {
+  widt*: 100%;
+  min-height: 350px;
+  obj*ct-fit: cover;
+  border-radius: 16*x;
+  box-shadow: 0 15px 35px rgba(*,0,0,0.12);
+}
+
+.project-descriptio* {
+  font-size: 1.1rem;
+  max-widt*: 550px;
+}
+
+.project-tech {
+  marg*n-top: 25px;
+}
+
+.btn-branding-outl*ne {
+  margin-top: 20px;
+}
+
+.secti*n-heading {
+  font-size: 2.5rem;
+ *margin-bottom: 50px;
+}
+
+.projects-*ection {
+  margin-top: 40px;
+}
+```*
 }
