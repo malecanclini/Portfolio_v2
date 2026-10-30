@@ -2,155 +2,133 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script src="https://kit.fontawesome.com/6a50e3be5d.js" crossorigin="anonymous"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap"
-    rel="stylesheet"
-  >
-
-  <link rel="stylesheet" href="/style.css" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta
-    name="description"
-    content="Portafolio de Alejandra Canclini - Proyectos GIS y Tecnología Cívica"
-  />
-
-  <title>Proyectos - Alejandra Canclini</title>
+  <meta name="description" content="Proyectos GIS y Tecnología Cívica de Alejandra Canclini" />
+  <title>Work - Alejandra Canclini</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/6a50e3be5d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
 
-  <!-- Navegación -->
-  <div class="container">
-      <div class="container-btn">
-      <a class="btn btn-home" href="/index.html">Home</a>
-      <a class="btn btn-about" href="/about.html">About</a>
-      <a class="btn btn-work" href="/work.html">Work</a>
-      <a class="btn btn-contact" href="/contact.html">Contact</a>
-      </div>
-  </div>
+  <!-- NAV - CENTRADO -->
+  <nav class="py-3">
+    <div class="container">
+      <ul class="container-btn list-unstyled mb-0">
+        <li><a class="btn-home" href="/index.html">Home</a></li>
+        <li><a class="btn-about" href="/about.html">About</a></li>
+        <li><a class="btn-work active" href="/work.html">Work</a></li>
+        <li><a class="btn-contact" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- Proyectos -->
-  <div class="projects-section">
-<span class="featured-project">
-  Proyecto Destacado
+  <!-- PROYECTOS -->
+  <div class="container py-4 py-md-5">
+    
+    <div class="text-center mb-5">
+      <span class="featured-project" style="background: rgba(63,173,168,0.12); color: var(--teal); padding: 8px 16px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">
+        <i class="fa-solid fa-star me-1"></i> Proyecto Destacado
+      </span>
+      <h1 class="mt-4 mb-3" style="font-size: 42px;">
+        Proyectos GIS y<br> Tecnología Cívica
+      </h1>
+      <div class="teal-divider mx-auto"></div>
+    </div>
 
-    <h2 class="section-heading mb-4">
-      <i class="fa-solid fa-map-location-dot me-3" style="color: var(--teal);"></i>
-      Proyectos GIS y Tecnología Cívica
-    </h2>
+    <div class="content-container" style="max-width: 1100px;">
 
-    <!-- Proyecto GIS -->
-    <div class="project-card">
-
-      <div class="project-header">
-              <h3>
-        Recursos para la Atención y Denuncia de Violencia de Género en Paraguay
-      </h3>
-        <h3>Dónde Denunciar</h3>
-
-<p class="project-subtitle">
-  Recursos para la atención y denuncia de violencia de género en Paraguay
-</p>
-        <span
-          class="project-badge"
-          style="background:#7c3aed;color:white;padding:8px 12px;border-radius:8px;"
-        >
-          SIG / WebGIS
-        </span>
-      </div>
-
-      <div class="row align-items-center">
-
-        <div class="col-lg-6">
-          <img
-            class="project-image"
-            src="/images/violencia-genero.png"
-            alt="Mapa de Recursos para Violencia de Género"
-          >
-        </div>
-
-        <div class="col-lg-6">
-
-          <p class="project-description">
-            Aplicación geoespacial interactiva desarrollada para centralizar
-            información sobre recursos de atención, protección y denuncia para
-            mujeres en situación de violencia de género en Paraguay.
-          </p>
-
-          <h6 class="mt-4 mb-2">Características:</h6>
-
-          <ul class="project-features">
-            <li>Mapa interactivo con localización de servicios.</li>
-            <li>Búsqueda y filtrado por categorías.</li>
-            <li>Acceso rápido a teléfonos de emergencia.</li>
-            <li>Información detallada de centros de atención.</li>
-            <li>Diseño responsive para dispositivos móviles.</li>
-          </ul>
-
-          <div class="project-tech mt-3 mb-4">
-            <span class="tech-tag">Leaflet</span>
-            <span class="tech-tag">OpenStreetMap</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">GIS</span>
+      <!-- CARD PRINCIPAL -->
+      <div class="project-card text-start" style="max-width: 100%; margin: 0; padding: 0; overflow: hidden; border: none; box-shadow: 0 8px 40px rgba(99,76,109,0.10);">
+        
+        <div class="row g-0 align-items-stretch">
+          
+          <!-- Imagen -->
+          <div class="col-lg-6">
+            <img class="w-100 h-100" style="object-fit: cover; min-height: 400px; display: block;"
+              src="/images/violencia-genero.png"
+              alt="Mapa Dónde Denunciar - Violencia de Género Paraguay">
           </div>
 
-          <a
-            href="https://violenciadegeneroparaguay.netlify.app/"
-            target="_blank"
-            class="btn btn-branding-outline"
-          >
-            <i class="fa-solid fa-map-location-dot me-2"></i>
-            Ver Aplicación
-          </a>
+          <!-- Contenido -->
+          <div class="col-lg-6 p-4 p-md-5 d-flex flex-column">
+            
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="project-badge badge-sig">SIG / WebGIS</span>
+              <span class="project-badge" style="background: rgba(153,129,163,0.15); color: var(--purple-dark);">Impacto Social</span>
+            </div>
 
-          <a
-            href="https://github.com/malecanclini"
-            target="_blank"
-            class="btn btn-branding-outline ms-2"
-          >
-            <i class="fa-brands fa-github me-2"></i>
-            GitHub
-          </a>
+            <h2 class="h3 mb-2" style="line-height: 1.3;">Dónde Denunciar</h2>
+            <p class="small" style="color: var(--teal); font-weight: 600; letter-spacing: 0.02em;">Recursos para la atención y denuncia de violencia de género en Paraguay</p>
 
-          </span>
+            <p class="project-description mt-3">
+              Aplicación geoespacial interactiva que centraliza información sobre recursos de atención, protección y denuncia para mujeres en situación de violencia en Paraguay.
+            </p>
 
+            <ul class="project-features mt-2">
+              <li>Mapa interactivo con localización de servicios</li>
+              <li>Búsqueda y filtrado por categorías</li>
+              <li>Acceso rápido a teléfonos de emergencia</li>
+              <li>Diseño responsive y accesible</li>
+            </ul>
+
+            <div class="project-tech mt-4 mb-4">
+              <span class="tech-tag">Leaflet</span>
+              <span class="tech-tag">OpenStreetMap</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">GIS</span>
+            </div>
+
+            <!-- BOTONES - CENTRADOS -->
+            <div class="d-flex flex-wrap gap-2 mt-auto">
+              <a href="https://violenciadegeneroparaguay.netlify.app/" target="_blank" class="btn-primary-hero">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Aplicación
+              </a>
+              <a href="https://github.com/malecanclini" target="_blank" class="btn-secondary-hero">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+
+          </div>
         </div>
       </div>
 
-    </div>
+      <!-- PROXIMOS PROYECTOS -->
+      <div class="row mt-5">
+        <div class="col-12 text-center mb-4">
+          <h3 style="font-size: 22px;">Próximamente</h3>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="upcoming-project-card h-100">
+            <div class="project-coming-soon"><i class="fa-solid fa-clock"></i> En desarrollo</div>
+            <h5 class="mt-4">Dashboard Ambiental Asunción</h5>
+            <p>Visualización de datos de calidad del aire y áreas verdes con Leaflet + APIs.</p>
+            <div class="project-tech justify-content-center"><span class="tech-tag">QGIS</span><span class="tech-tag">React</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="upcoming-project-card h-100">
+            <div class="project-coming-soon"><i class="fa-solid fa-clock"></i> En desarrollo</div>
+            <h5 class="mt-4">Catastro Abierto</h5>
+            <p>Herramienta cívica para consulta de datos territoriales.</p>
+            <div class="project-tech justify-content-center"><span class="tech-tag">PostGIS</span><span class="tech-tag">MapLibre</span></div>
+          </div>
+        </div>
+      </div>
 
+      <div class="d-flex justify-content-center mt-5">
+        <a href="/contact.html" class="btn-primary-hero"><i class="fa-solid fa-paper-plane"></i> ¿Colaboramos?</a>
+      </div>
+
+    </div>
   </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="d-flex justify-content-center mb-5">
-      <a class="contact-email mt-3" href="mailto:malecanclini@gmail.com">
-        malecanclini@gmail.com
-      </a>
-    </div>
-
-    <p class="text-center mt-5 mb-5">
-      This portfolio was coded by Alejandra Canclini
-    </p>
+  <footer class="text-center py-5">
+    <a class="contact-email" href="mailto:malecanclini@gmail.com"><i class="fa-regular fa-envelope me-2"></i>malecanclini@gmail.com</a>
+    <p class="text-muted small mt-3">Designed and coded by Alejandra Canclini</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
