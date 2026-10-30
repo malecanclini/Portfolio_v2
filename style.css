@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap');
 
-.container-btn{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-top:20px;
-    position:static;
-}
-
 :root {
   --purple-dark:  #634c6d;
   --purple-mid:   #9981a3;
@@ -162,25 +154,6 @@ a {
   background: radial-gradient(circle, rgba(99,76,109,0.08) 0%, transparent 70%);
 }
 
-.container-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  z-index: 1000;
-}
-
-.container-btn li {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
 
 /* Botones de navegación unificados (incluyendo .btn-writing) */
 .btn-home, .btn-about, .btn-contact, .btn-work, .btn-writing {
@@ -1170,15 +1143,6 @@ footer p {
     border-radius: 16px;
   }
 
-  .container-btn {
-    position: relative;
-    top: 0;
-    right: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 16px;
-  }
 
   .btn-home, .btn-about, .btn-contact, .btn-work, .btn-writing {
     width: auto;
@@ -1304,4 +1268,13 @@ footer p {
   font-weight:600;
   display:inline-block;
   margin-bottom:20px;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0;
+  padding: 0;
 }
